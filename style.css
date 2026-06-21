@@ -471,3 +471,24 @@ nav a:hover {
     color: #ffde00; 
     transform: translateY(-2px);
 }
+
+/* 1. Base styles for larger screens (Laptop) */
+.container {
+    display: flex;
+    flex-direction: row; /* Puts items side-by-side */
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        text-align: center;      
+    }
+    
+    .container img {
+        width: 90%;             
+        height: auto;
+    }
+}
